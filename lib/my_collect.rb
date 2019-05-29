@@ -7,7 +7,3 @@ def my_collect(collection)
   end
   @list
 end
-
-my_collect(collection) do |lang|
-  lang.upcase
-end

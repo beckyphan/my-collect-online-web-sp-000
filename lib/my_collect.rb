@@ -2,7 +2,7 @@ def my_collect(collection)
   counter = 0
   @list = []
   while counter < collection.length 
-    @list[counter] = yield(counter)
+    @list.push(yield(counter))
     counter += 1
   end
   @list

@@ -1,9 +1,9 @@
 def my_collect(collection)
   counter = 0
-  @list = []
+  list = []
   while counter < collection.length 
-    @list.push(yield(counter))
+    list.push(yield(counter))
     counter += 1
   end
-  @list
+  list
 end
